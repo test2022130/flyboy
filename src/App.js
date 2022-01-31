@@ -30,7 +30,7 @@ export default function App() {
 	const [ispresale, setPresale] = useState();
 	const [status, setStatus] = useState(true);
 	const [balance, setBalance] = useState(0);
-	const [totalMintCount, setTotalMintCount] = useState("0");
+	const [totalMintCount, setTotalMintCount] = useState(0);
 	// const [mintCount, setMintCount] = useState(1);
 	const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 	const [presaleStarted, setPresalestarted] = useState();
