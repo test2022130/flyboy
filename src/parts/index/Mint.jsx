@@ -27,16 +27,10 @@ export default function Mint(props) {
           <div className="mint__inner-line left"></div>
           <div className="mint__inner-line right"></div>
 
-          {!publicsaleStarted ? 
-          (<><h2><span style={presaleStarted ? { fontSize: '40px' } : { fontSize: '24px' }}>
-            {!presaleStarted ? "Presale will start 31,JAN, 2022,13:00GMT" : "Presale started"}
-            <br></br></span></h2>
-          <h2 style={{ fontSize: '55px' }}>{timeLeft.days} days&nbsp;&nbsp;  {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}&nbsp;&nbsp;TO GO</h2></>)
-          :
-          (<h2><span style={{ fontSize: '40px' }}>
-            Public Sale started
-          <br></br></span></h2>)
-          }
+          <h2><span style={{ fontSize: '40px' }}>
+            Pre Sale started
+        <br></br></span></h2>
+          
 
 
 
