@@ -169,7 +169,7 @@ export default function App() {
 
 		}
 		console.log("valuables are = =", address, ispresale, counter, price, balance);
-		await mint(address, ispresale, counter, price, balance);
+		await mint(address, status, counter, price, balance);
 	}
 
 	// const onReserve = async() =>{
