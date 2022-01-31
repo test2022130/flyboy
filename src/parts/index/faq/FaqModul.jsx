@@ -32,6 +32,6 @@ export const FaqModul = [
     id: "faq-5",
     title: "When is the mint?",
     image: "images/icons/mint.svg",
-    text: <>1. Tentative Sale day: 22 Jan 2022 1400GMT / 2200 HKT <br/>2. Pre-sale will take place a few days prior.</>,
+    text: <>1. Presale: 31st Jan 2022 13:00GMT<br/>2. Public Sale: 4th Feb 2022 13:00GMT</>,
   },
 ];

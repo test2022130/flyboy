@@ -6,7 +6,7 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3("https://eth-rinkeby.alchemyapi.io/v2/vNRrTL1PCwDlPNxCxSXb8BuhBAHYJ0Jc");
 
 const contractABI = require("./contract-abi_new.json");
-const contractAddress = "0x0F97D40441AC780949Ca9C1CD2c85eBfc7625DE6";
+const contractAddress = "0xc59Cd05eE3494bFdbCe160d5d040CEA777b54dfB";
 
 export const FlyBoyNFT = new web3.eth.Contract( contractABI, contractAddress );
 
