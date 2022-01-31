@@ -161,7 +161,7 @@ export const mint = async (address, ispresale, counter, price, balance) => {
    value: web3.utils.toHex(web3.utils.toBN(`${1000000000000000000*price}`)),
    gasLimit: 62000,
    data: FlyBoyNFT.methods
-     .mint(address, ispresale, counter, balance)
+     .mint(ispresale, counter, balance)
      .encodeABI(),
  };
  console.log(transactionParameters.value);
