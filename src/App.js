@@ -28,7 +28,7 @@ export default function App() {
 	const [walletIntegration, setWalletIntegration] = useState("");
 	const [counter, setCounter] = useState(1);
 	const [ispresale, setPresale] = useState();
-	const [status, setStatus] = useState();
+	const [status, setStatus] = useState(true);
 	const [balance, setBalance] = useState(0);
 	const [totalMintCount, setTotalMintCount] = useState("0");
 	// const [mintCount, setMintCount] = useState(1);
@@ -71,16 +71,16 @@ export default function App() {
 			const body = {
 				address: address,
 			}
-			axios
-				.post("https://flyboys.io/api/checkUser", body, {
-					"Content-Type": "application/json;charset=UTF-8",
-					"access-control-allow-origin": "*",
-				})
-				.then((response) => {
-					console.log("status", response);
-					setPresale(response.data.success);
-				})
-				.catch((error) => { });
+			// axios
+			// 	.post("https://flyboys.io/api/checkUser", body, {
+			// 		"Content-Type": "application/json;charset=UTF-8",
+			// 		"access-control-allow-origin": "*",
+			// 	})
+			// 	.then((response) => {
+			// 		console.log("status", response);
+			// 		setPresale(response.data.success);
+			// 	})
+			// 	.catch((error) => { });
 
 		}
 	}, [address])
@@ -155,10 +155,10 @@ export default function App() {
 		console.log("status === ", status);
 		if (status == true) {
 			if (counter == 1) { price = 0.04 }
-			else if (counter == 2) { price = 0.075 }
-			else if (counter == 3) { price = 0.11 }
-			else if (counter == 4) { price = 0.14 }
-			else if (counter == 5) { price = 0.16 }
+			else if (counter == 2) { price = 0.07 }
+			else if (counter == 3) { price = 0.1 }
+			else if (counter == 4) { price = 0.13 }
+			else if (counter == 5) { price = 0.15 }
 		}
 		else if (status == false) {
 			if (counter == 1) { price = 0.06 }
